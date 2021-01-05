@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import dynamic from 'next/dynamic'
+import Link from 'next/link'
 
 export default function Home() {
+  const DynamicComponent = dynamic(() => import('../components/switching-theme'))
   return (
     <div className={styles.container}>
       <Head>
@@ -10,6 +13,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+      <DynamicComponent />
+      <Link href="/first-post">次のページ</Link>
+
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
