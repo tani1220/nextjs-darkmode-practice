@@ -14,7 +14,8 @@ export default function Home() {
 
       <main className={styles.main}>
       <DynamicComponent />
-      <Link href="/first-post">次のページ</Link>
+      <br />
+      <Link href="/next-themes"><a className={styles.card}>next-themesプラグインを使ったダークモード実装例はこちら</a></Link>
 
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
