@@ -6,12 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "next": "10.0.4",
     "next-themes": "0.0.10",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
